@@ -1,3 +1,28 @@
-<p>
-  pizza-form-container works!
-</p>
+<div class="container content" [formGroup]="form">
+  <div class="row">
+    <div class="col-md-12"> 
+      <div>errors here</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-md-12">
+          Pizza viewer
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            customer details
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+            <button class="pull-right" mat-raised-button color="primary">SUBMIT</button>
+            <button mat-raised-button color>RESET</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">PIZZA LIST</div>
+  </div>
+</div>

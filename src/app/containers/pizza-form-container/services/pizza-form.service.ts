@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { PizzaFormValidatorsService } from './pizza-form-validators.service';
 import { FormBuilder, FormGroup, Validators, FormArray } from '@angular/forms';
-import { PizzaToppingsEnum } from './pizza-form.interface';
+import { PizzaToppingsEnum, IToppingItem } from './pizza-form.interface';
 
 @Injectable()
 export class PizzaFormService {
@@ -44,6 +44,9 @@ get isValid(): boolean {
   return true;
 }
 
+getselectedToppings(toppings: IToppingItem[]): IToppingItem[] {
+  return toppings.filter(t => t.selected);
+}
 
 
 }

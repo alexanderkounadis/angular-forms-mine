@@ -13,10 +13,12 @@ import {
   } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 export const APP_MODULE_DECLARATIONS = [
     AppComponent, 
-    PizzaFormContainerComponent
+    PizzaFormContainerComponent,
+    NavbarComponent
 ];
 
 export const APP_MODULE_IMPORTS = [
