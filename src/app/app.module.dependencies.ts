@@ -14,11 +14,15 @@ import {
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { SelectedPizzaViewerComponent } from './components/selected-pizza-viewer/selected-pizza-viewer.component';
+import { PizzaSizePickerComponent } from './components/pizza-size-picker/pizza-size-picker.component';
 
 export const APP_MODULE_DECLARATIONS = [
     AppComponent, 
     PizzaFormContainerComponent,
-    NavbarComponent
+    NavbarComponent,
+    SelectedPizzaViewerComponent,
+    PizzaSizePickerComponent
 ];
 
 export const APP_MODULE_IMPORTS = [

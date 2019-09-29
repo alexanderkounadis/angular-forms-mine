@@ -14,10 +14,15 @@ import { PizzaFormService } from './services/pizza-form.service';
   ]
 })
 export class PizzaFormContainerComponent implements OnInit {
+  
   get form(): FormGroup{
     return this.pizzaFormService.form;
   }
 
+  onPizzaAdd() {
+    console.log('pizza added');
+  }
+  
   constructor(private pizzaFormService: PizzaFormService) { }
 
   ngOnInit() {
